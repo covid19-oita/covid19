@@ -3,7 +3,7 @@
 ![](https://github.com/covid-oita/covid19/workflows/production%20deploy/badge.svg)
 
 
-### 日本語 | [English](./docs/en/README.md) 
+### 日本語 | [English](./docs/en/README.md)
 
 ## 貢献の仕方
 Issues にあるいろいろな修正にご協力いただけると嬉しいです。
@@ -65,7 +65,7 @@ $ docker-compose run --rm app yarn install
 
 ### 本番環境/その他の判定
 
-`process.env.GENERATE_ENV` の値が、本番の場合は`'production'`に、それ以外の場合は `'development'` になっています。  
+`process.env.GENERATE_ENV` の値が、本番の場合は`'production'`に、それ以外の場合は `'development'` になっています。
 テスト環境のみで実行したい処理がある場合はこちらの値をご利用ください。
 
 ### ステージング・本番環境への反映
@@ -78,10 +78,10 @@ $ docker-compose run --rm app yarn install
 
 ### ブランチルール
 
-development, dev-i18n, dev-hotfix 以外は Pull Request は禁止です。  
+development, dev-i18n, dev-hotfix 以外は Pull Request は禁止です。
 Pull Request を送る際の branch は、以下のネーミングルールでお願いします。
 
-機能追加系： feature/#{ISSUE_ID}-#{branch_title_name}  
+機能追加系： feature/#{ISSUE_ID}-#{branch_title_name}
 ホットフィックス系: hotfix/#{ISSUE_ID}-#{branch_title_name}
 
 #### 基本的なブランチ
