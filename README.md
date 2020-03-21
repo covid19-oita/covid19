@@ -91,12 +91,12 @@ Pull Request を送る際の branch は、以下のネーミングルールで�
 | 緊急適用用 | dev-hotfix | なし | 急ぎ本番に適用するべき修正。管理者から依頼された場合こちらを使ってください |
 | i18n 作業用 | dev-i18n | https://i18n-covid-oita.netlify.com/ | テンポラリで使っています |
 | ステージング | staging | https://stg-covid19-oita.netlify.com/ | 本番前の最終確認用。管理者以外の Pull Request は禁止です |
-| 本番 | master | http://stopcovid19.metro.oita.lg.jp/ | 管理者以外の Pull Request は禁止です |
+| 本番 | master | https://covid19-oita.netlify.com/ | 管理者以外の Pull Request は禁止です |
 
 #### システムで利用しているブランチ
 | 目的 | ブランチ | 確認URL | 備考 |
 | ---- | -------- | ---- | ---- |
-| 本番サイトHTML | production | http://stopcovid19.oita.jp/ | 静的ビルドされたHTMLが置いてある場所 |
+| 本番サイトHTML | production | https://covid19-oita.netlify.com/ | 静的ビルドされたHTMLが置いてある場所 |
 | ステージングサイト HTML | gh-pages | https://stg-covid19-oita.netlify.com/ | 静的ビルドされたHTMLが置いてある場所 |
 | OGP作業用 | deploy/new_ogp | なし | OGPの更新用 |
 
