@@ -125,7 +125,7 @@ export default {
           content:
             this.title +
             ' | ' +
-            this.$t('東京都') +
+            this.$t('大分県') +
             ' ' +
             this.$t('新型コロナウイルス感染症') +
             this.$t('対策サイト')
