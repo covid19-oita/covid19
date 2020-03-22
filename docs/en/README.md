@@ -2,7 +2,7 @@
 
 
 
-
+[![大分県 新型コロナウイルス感染症対策サイト](https://user-images.githubusercontent.com/24912801/77246566-1f8fb180-6c6c-11ea-81b5-ebda94b8c163.png)](https://covid19-oita.netlify.com)
 
 
 ### [日本語](./../../README.md) | English 
@@ -80,7 +80,7 @@ Please use the variable to detect which enviroinment is used at the runtime.
 ### Deployment to Staging & Production Environments
 
 When `master` branch is updated, the HTML files will be automatically built onto `production` branch,
-and then the production site (https://covid19-oita.netlify.com/ ) will be also updated.
+and then the production site (https://covid19-oita.netlify.com/) will be also updated.
 
 When `staging` branch is updated, the HTML files will be automatically built onto `gh-pages` branch,
 and then the staging site (https://stg-covid19-oita.netlify.com/) will be also updated.
