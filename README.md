@@ -2,6 +2,7 @@
 
 ![](https://github.com/covid-oita/covid19/workflows/production%20deploy/badge.svg)
 
+![https://user-images.githubusercontent.com/24912801/77246480-00445480-6c6b-11ea-991d-589197bc1eff.png](https://covid19-oita.netlify.com)
 
 ### 日本語 | [English](./docs/en/README.md)
 
