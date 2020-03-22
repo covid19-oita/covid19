@@ -6,7 +6,7 @@
     <StaticCard>
       <i18n
         tag="p"
-        path="当サイトは三重県内における新型コロナウイルス感染症（COVID-19）に関する最新情報を提供するために、{founder}が開設したものです。"
+        path="当サイトは大分県内における新型コロナウイルス感染症（COVID-19）に関する最新情報を提供するために、{founder}が開設したものです。"
       >
         <a
           href="https://github.com/covid19-oita"
