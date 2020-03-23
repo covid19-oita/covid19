@@ -11,8 +11,8 @@
       <h1 class="SideNavigation-Heading">
         <nuxt-link :to="localePath('/')" class="SideNavigation-HeadingLink">
           <div class="SideNavigation-HeaderLogo">
-            <img src="/logo.svg" :alt="$t('大分県')" />
-          </div>
+            <img src="/logo.png" :alt="$t('大分県')" />
+         </div>
           <div class="SideNavigation-HeaderLogoLinkText">
             {{ $t('新型コロナウイルス感染症') }}<br />{{ $t('対策サイト') }}
           </div>
