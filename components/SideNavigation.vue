@@ -68,6 +68,17 @@
           </a>
         </div>
         <small class="SideNavigation-Copyright">
+          {{ $t('このサイトの内容物は') }}
+          <a
+            :href="$t('https://creativecommons.org/licenses/by/4.0/deed.ja')"
+            target="_blank"
+            rel="license"
+            class="SideNavigation-LicenseLink"
+          >
+            {{ $t('クリエイティブ・コモンズ 表示 4.0 ライセンス') }}
+          </a>
+          {{ $t('の下に提供されています。') }}
+          <br />
           Copyright © 2020
           <a href="https://github.com/covid19-oita/">covid19-oita</a>. All
           Rights Reserved.
