@@ -13,7 +13,7 @@ const config: Configuration = {
     htmlAttrs: {
       prefix: 'og: http://ogp.me/ns#'
     },
-    titleTemplate: '%s | 東京都 新型コロナウイルス感染症対策サイト',
+    titleTemplate: '%s | 大分県 新型コロナウイルス感染症対策サイト (非公式)',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -96,8 +96,6 @@ const config: Configuration = {
    ** Nuxt.js modules
    */
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     ['@nuxtjs/dotenv', { filename: `.env.${environment}` }],
@@ -106,11 +104,6 @@ const config: Configuration = {
     'nuxt-purgecss',
     ['vue-scrollto/nuxt', { duration: 1000, offset: -72 }]
   ],
-  /*
-   ** Axios module configuration
-   ** See https://axios.nuxtjs.org/options
-   */
-  axios: {},
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
@@ -122,7 +115,7 @@ const config: Configuration = {
     }
   },
   googleAnalytics: {
-    id: 'UA-159417676-1'
+    id: 'UA-104760868-6'
   },
   build: {
     postcss: {
@@ -145,7 +138,7 @@ const config: Configuration = {
     hardSource: process.env.NODE_ENV === 'development'
   },
   manifest: {
-    name: '東京都 新型コロナウイルス感染症対策サイト',
+    name: '大分県 新型コロナウイルス感染症対策サイト',
     theme_color: '#00a040',
     background_color: '#ffffff',
     display: 'standalone',
