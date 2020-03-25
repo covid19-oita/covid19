@@ -131,6 +131,18 @@ export default Vue.extend({
           link: 'https://www.pref.oita.jp/site/bosaianzen/shingatacorona.html'
         },
         {
+          title: this.$t('大分市 新型コロナウイルスに関連する情報'),
+          link: 'https://www.city.oita.oita.jp/o029/coronavirus.html'
+        },
+        {
+          title: this.$t('大分合同新聞'),
+          link: 'https://www.oita-press.co.jp/followup/Covid19'
+        },
+        {
+          title: this.$t('NHK NEWS 大分'),
+          link: 'https://www3.nhk.or.jp/lnews/oita/'
+        },
+        {
           title: this.$t('当サイトについて'),
           link: this.localePath('/about')
         },
