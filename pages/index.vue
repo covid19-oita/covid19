@@ -32,6 +32,7 @@
       <confirmed-cases-number-card />
       <confirmed-cases-attributes-card />
       <tested-number-card />
+      <age-card />
     </v-row>
   </div>
 </template>
@@ -45,13 +46,15 @@ import News from '@/data/news.json'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
 import TestedNumberCard from '@/components/cards/TestedNumberCard.vue'
+import AgeCard from '@/components/cards/AgeCard.vue'
 
 export default Vue.extend({
   components: {
     PageHeader,
     ConfirmedCasesNumberCard,
     ConfirmedCasesAttributesCard,
-    TestedNumberCard
+    TestedNumberCard,
+    AgeCard
   },
   data() {
     const data = {
