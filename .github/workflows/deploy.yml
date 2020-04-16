@@ -10,11 +10,6 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - name: Pull submodule latest commit
-        run: |
-          git submodule update -i
-          cd data/ && git checkout master
-
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
@@ -31,7 +26,6 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn run test
       - run: yarn run generate:deploy --fail-on-page-error
-
 
       - name: Push changes
         uses: ad-m/github-push-action@master

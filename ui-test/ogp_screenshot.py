@@ -9,7 +9,6 @@ PATHS = {
     '/cards/number-of-confirmed-cases': [959,500],
     '/cards/attributes-of-confirmed-cases': [959,480],
     '/cards/number-of-tested': [959,540],
-    '/cards/number-of-reports-to-covid19-telephone-advisory-center': [959,500],
     '/cards/number-of-reports-to-covid19-consultation-desk': [959,500],
     '/cards/predicted-number-of-toei-subway-passengers': [959,750],
     '/cards/agency': [959,730],
