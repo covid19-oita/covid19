@@ -24,6 +24,7 @@
         charset="utf-8"
       />
     </div>
+    <news-card class="mb-4" />
     <v-row class="DataBlock">
       <confirmed-cases-details-card />
       <confirmed-cases-number-card />
@@ -40,6 +41,7 @@
 import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
 import PageHeader from '@/components/PageHeader.vue'
+import NewsCard from '@/components/cards/NewsCard.vue'
 import ConfirmedCasesDetailsCard from '@/components/cards/ConfirmedCasesDetailsCard.vue'
 import ConfirmedCasesNumberCard from '@/components/cards/ConfirmedCasesNumberCard.vue'
 import ConfirmedCasesAttributesCard from '@/components/cards/ConfirmedCasesAttributesCard.vue'
@@ -51,6 +53,7 @@ import ConsultationDeskReportsNumberCard from '@/components/cards/ConsultationDe
 export default Vue.extend({
   components: {
     PageHeader,
+    NewsCard,
     ConfirmedCasesDetailsCard,
     ConfirmedCasesNumberCard,
     ConfirmedCasesAttributesCard,

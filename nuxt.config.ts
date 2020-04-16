@@ -7,7 +7,8 @@ const environment = process.env.NODE_ENV || 'development'
 const config: Configuration = {
   mode: 'spa',
   env: {
-    apiUrl: 'https://data-covid19-oita.netlify.app/json/data.json'
+    apiUrl: 'https://data-covid19-oita.netlify.app/json/data.json',
+    newsUrl: 'https://data-covid19-oita.netlify.app/json/news.json'
   },
   /*
    ** Headers of the page
