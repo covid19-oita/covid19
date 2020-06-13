@@ -14,7 +14,7 @@
 
 <script>
 import formatVariableGraph from '@/utils/formatVariableGraph.ts'
-import CircleChart from '@/components/CircleChart.vue'
+import CircleChart from '@/components/charts/CircleChart.vue'
 
 export default {
   components: {

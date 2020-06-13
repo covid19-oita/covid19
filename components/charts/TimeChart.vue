@@ -75,7 +75,7 @@
     <template v-slot:infoPanel>
       <data-view-basic-info-panel
         :l-text="displayInfo.lText"
-        :s-text="displayInfo.sText"
+        :m-text="displayInfo.sText"
         :unit="displayInfo.unit"
       />
     </template>

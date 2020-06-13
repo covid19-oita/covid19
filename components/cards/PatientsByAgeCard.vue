@@ -1,6 +1,7 @@
 <template>
   <v-col cols="12" md="6" class="DataCard">
-    <circle-chart-for-age
+    <horizontal-bar-chart
+      :description="'年代が公開されていない患者は含まれていません。'"
       :title="$t('年代別陽性患者数')"
       :title-id="'patients-by-age'"
       :chart-data="ageGraph"
@@ -14,11 +15,11 @@
 
 <script>
 import formatVariableGraph from '@/utils/formatVariableGraph.ts'
-import CircleChartForAge from '@/components/CircleChartForAge.vue'
+import HorizontalBarChart from '@/components/charts/HorizontalBarChart.vue'
 
 export default {
   components: {
-    CircleChartForAge
+    HorizontalBarChart
   },
   data() {
     return {

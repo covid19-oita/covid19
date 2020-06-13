@@ -4,6 +4,8 @@
       {{ lText }}
       <small class="DataView-DataInfo-summary-unit">{{ unit }}</small>
     </span>
+    <br v-if="mText !== ''" />
+    <small class="DataView-DataInfo-date">{{ mText }}</small>
     <br v-if="lText !== ''" />
     <small class="DataView-DataInfo-date">{{ sText }}</small>
   </div>
@@ -50,9 +52,15 @@ export default Vue.extend({
       required: false,
       default: ''
     },
+    mText: {
+      type: String,
+      required: false,
+      default: ''
+    },
     sText: {
       type: String,
-      required: true
+      required: false,
+      default: ''
     },
     unit: {
       type: String,

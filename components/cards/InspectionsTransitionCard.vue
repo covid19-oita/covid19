@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import TimeChart from '@/components/TimeChart.vue'
+import TimeChart from '@/components/charts/TimeChart.vue'
 import formatGraph from '@/utils/formatGraph'
 
 export default {

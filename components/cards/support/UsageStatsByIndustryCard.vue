@@ -1,6 +1,6 @@
 <template>
   <v-col cols="12" md="6" class="DataCard">
-    <horizontal-bar-chart-for-loan
+    <horizontal-bar-chart
       :title="
         $t('新型コロナウイルス関連の大分県における融資の利用状況 (業種別件数)')
       "
@@ -18,11 +18,11 @@
 
 <script>
 import formatVariableGraph from '@/utils/formatVariableGraph.ts'
-import HorizontalBarChartForLoan from '@/components/HorizontalBarChartForLoan.vue'
+import HorizontalBarChart from '@/components/charts/HorizontalBarChart.vue'
 
 export default {
   components: {
-    HorizontalBarChartForLoan
+    HorizontalBarChart
   },
   data() {
     return {

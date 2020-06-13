@@ -14,7 +14,7 @@
 
 <script>
 import formatGraph from '@/utils/formatGraph'
-import TimeChart from '@/components/TimeChart.vue'
+import TimeChart from '@/components/charts/TimeChart.vue'
 
 export default {
   components: {
