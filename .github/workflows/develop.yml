@@ -34,29 +34,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: dev-pages
-      
-      # TODO: Upload images to PR comments as github content attachments.
-      # related issue: https://stackoverflow.com/questions/19576601/github-api-issue-with-file-upload
-      - name: screenshot/covid19/ja
-        uses: swinton/screenshot-website@v1
-        with:
-          source: https://dev-covid19-oita.netlify.app/
-          full-page: true
-
-      - name: screenshot/covid19/en
-        uses: swinton/screenshot-website@v1
-        with:
-          source: https://dev-covid19-oita.netlify.app/en/
-          full-page: true
-
-      - name: screenshot/support/ja
-        uses: swinton/screenshot-website@v1
-        with:
-          source: https://dev-covid19-oita.netlify.app/
-          full-page: true
-
-      - name: screenshot/support/en
-        uses: swinton/screenshot-website@v1
-        with:
-          source: https://dev-covid19-oita.netlify.app/en/support/
-          full-page: true

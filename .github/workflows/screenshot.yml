@@ -1,0 +1,33 @@
+name: screenshot
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - name: screenshot/covid19/ja
+        uses: swinton/screenshot-website@v1
+        with:
+          source: https://dev-covid19-oita.netlify.app/
+          full-page: true
+
+      - name: screenshot/covid19/en
+        uses: swinton/screenshot-website@v1
+        with:
+          source: https://dev-covid19-oita.netlify.app/en/
+          full-page: true
+
+      - name: screenshot/support/ja
+        uses: swinton/screenshot-website@v1
+        with:
+          source: https://dev-covid19-oita.netlify.app/
+          full-page: true
+
+      - name: screenshot/support/en
+        uses: swinton/screenshot-website@v1
+        with:
+          source: https://dev-covid19-oita.netlify.app/en/support/
+          full-page: true
