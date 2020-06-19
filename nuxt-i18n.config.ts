@@ -35,7 +35,7 @@ export default {
       description: 'Thai'
     },
     {
-      code: 'id', // 本当はidだがエラーになるので
+      code: 'id',
       name: 'Bahasa Indonesia',
       iso: 'id-ID',
       file: 'id.json',
