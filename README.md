@@ -7,9 +7,10 @@
 
 [![大分県 新型コロナウイルス感染症対策サイト](https://user-images.githubusercontent.com/24912801/84268856-52f32580-ab63-11ea-87c5-436bce19ba7d.png)](https://oita.stopcovid19.jp/)
 
-### 日本語 | [English](./docs/en/README.md)
+**日本語 | [English](./docs/en/README.md)**
 
 ## 貢献の仕方
+
 Issues にあるいろいろな修正にご協力いただけると嬉しいです。
 
 詳しくは[貢献の仕方](./CONTRIBUTING.md)を御覧ください。
@@ -25,7 +26,24 @@ Code of Conduct は[こちら](./CODE_OF_CONDUCT.md)を御覧ください。
 
 ### 環境構築の手順
 
-- 必要となるNode.jsのバージョン: 10.19.0以上
+以下のアプリケーションをインストールしてください。
+
+| アプリケーション名 | バージョン | 備考 |
+| ------- | ------- | ------- |
+| [Node.js](https://nodejs.org/ja/) | 10.19.0以上 | 必須 |
+| [Visual Studio Code](https://code.visualstudio.com/) | 指定なし | Visual Studio Codeを利用する場合 |
+| [yarn](https://classic.yarnpkg.com/ja/) | 指定なし | 本プログラムをyarnで実行する場合 |
+| [docker compose](https://docs.docker.com/compose/install/) | 指定なし | 本プログラムをdocker composeで実行する場合 |
+| [Vagrant](https://www.vagrantup.com/) | 指定なし | 本プログラムをVagrantで実行する場合 |
+
+Visual Studio Codeを利用する場合は、以下の拡張機能をインストールすることをおすすめします。
+
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+- [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
+- [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
+
+実行の手順はそれぞれ以下の通りです。
 
 **yarn を使う場合**
 ```bash
@@ -36,67 +54,69 @@ $ yarn install
 $ yarn dev
 ```
 
-**docker compose を使う場合**
-```bash
-# serve with hot reload at localhost:3000
-$ docker-compose up --build
-```
+`Cannot find module ****` と怒られたときは以下を実行してください。
 
-### `Cannot find module ****` と怒られた時
-
-**yarn を使う場合**
 ```bash
 $ yarn install
 ```
 
 **docker compose を使う場合**
 ```bash
+# serve with hot reload at localhost:3000
+$ docker-compose up --build
+```
+
+`Cannot find module ****` と怒られたときは以下を実行してください。
+
+```bash
 $ docker-compose run --rm app yarn install
 ```
 
-### VSCode + Remote Containersで開発する場合
+**VSCode + Remote Containersで開発する場合**
 
 1. VSCodeの拡張機能「[Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)」を導入します。
 2. [この画像（外部サイト）](https://code.visualstudio.com/docs/remote/containers#_quick-start-try-a-dev-container)のように左下部の「Open Folder in Container」でこのリポジトリのルートを選択すれば環境構築が始まります。
 
-#### Topic
-- 設定を変更したい場合は、`.devcontainer/devcontainer.json`を修正してください。
-詳細は[devcontainer.jsonのリファレンス](https://code.visualstudio.com/docs/remote/containers#_devcontainerjson-reference)を参照してください。
-- Remote Container実行時のみ有効な拡張機能「ESLint」を導入していますが、必要に応じて`devcontainer.json`の`extensions`に追加してください。
-詳細な手順は[こちら（外部サイト）](https://code.visualstudio.com/docs/remote/containers#_managing-extensions)を参照してください。
-- 開発環境を再構築する場合は、左下部の「Rebuild Container」を実行してください。
+設定を変更したい場合は、`.devcontainer/devcontainer.json`を修正してください。
+詳細は[devcontainer.jsonのリファレンス](https://code.visualstudio.com/docs/remote/containers#_devcontainerjson-reference)をご覧ください。
 
-### 本番環境/その他の判定
+Remote Container実行時のみ有効な拡張機能「ESLint」を導入していますが、必要に応じて`devcontainer.json`の`extensions`に追加してください。
+詳細な手順は[こちら（外部サイト）](https://code.visualstudio.com/docs/remote/containers#_managing-extensions)をご覧ください。
 
-`process.env.GENERATE_ENV` の値が、本番の場合は`'production'`に、それ以外の場合は `'development'` になっています。
-テスト環境のみで実行したい処理がある場合はこちらの値をご利用ください。
+開発環境を再構築する場合は、左下部の「Rebuild Container」を実行します。
 
-### ステージング・本番環境への反映
+### 本番環境/開発環境の判定
 
-`master` ブランチがアップデートされると、自動的に `production` ブランチにHTML類がbuildされます。そして、本番サイト https://oita.stopcovid19.jp/ が更新されます。
+本番環境、または開発環境のみで実行したい処理がある場合は、 `process.env.GENERATE_ENV` の値をご利用ください。
+この値は、本番環境では `'production'` 、開発環境では `'development'` になっています。
 
-`development` ブランチがアップデートされると、自動的に `dev-pages` ブランチにHTML類がbuildされます。そして、開発用サイト https://dev-covid19-oita.netlify.app/ が更新されます。
+### 本番環境/開発環境への反映
 
-### ブランチルール
+左列のブランチが更新されると、中列のブランチとWebサイトが自動的に更新されます。
 
-development以外は Pull Request は禁止です。
-Pull Request を送る際の branch は、以下のネーミングルールでお願いします。
+| ブランチ | HTML類がbuildされるブランチ | 更新されるWebサイト |
+| ---- | ---- | ---- |
+|`master`|`production`|本番サイト https://oita.stopcovid19.jp/|
+|`development`|`dev-pages`|開発用サイト https://dev-covid19-oita.netlify.app/|
 
-機能追加系： feature/#{ISSUE_ID}-#{branch_title_name}
+### ブランチ運用ルール
 
-#### 基本的なブランチ
+#### 開発で利用するブランチ
+
 | 目的 | ブランチ | 確認URL | 備考 |
 | ---- | -------- | ---- | ---- |
-| 開発 | development | https://dev-covid19-oita.netlify.app/ | base branch。基本はこちらに Pull Requestを送ってください |
 | 本番 | master | https://oita.stopcovid19.jp/ | 管理者以外の Pull Request は禁止です |
+| 開発 | development | https://dev-covid19-oita.netlify.app/ | こちらに Pull Requestを送ってください |
 
-#### システムで利用しているブランチ
-| 目的 | ブランチ | 確認URL | 備考 |
+#### Webサイトで利用するブランチ
+
+| 目的 | ブランチ | 確認URL |
 | ---- | -------- | ---- | ---- |
-| 本番サイト | production | https://oita.stopcovid19.jp/ | 静的ビルドされたHTMLが置いてある場所 |
+| 本番サイト | production | https://oita.stopcovid19.jp/ |
+| 開発サイト | dev-pages | https://dev-covid19-oita.netlify.app/ |
 
+## メディア掲載実績 🎉
 
-### メディア掲載実績
 - [大分県ホームページ](https://www.pref.oita.jp/site/covid19-oita/): リンクが掲載されました。
 
 - [政府CIOポータル](https://cio.go.jp/node/2581/): 東京都のオープンソースを活用した新型コロナウイルス感染症対策サイトとして紹介されました。
