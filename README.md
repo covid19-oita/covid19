@@ -11,16 +11,20 @@
 
 ## 貢献の仕方
 
-Issues にあるいろいろな修正にご協力いただけると嬉しいです。
+機能追加や修正に関するやりとりは Issues で行います。
+Issues へのコメントはご自由にどうぞ！新しい質問や提案なども受け付けます。
+ただし、issue を追加する場合は、同様の issue がないことを必ず確認してください。
 
-詳しくは[貢献の仕方](./CONTRIBUTING.md)を御覧ください。
+Pull Request を送る場合は、対応する issue 番号を概要欄に必ず記載してください。
+issue に結びついていない Pull Request は受け付けません。
 
-Code of Conduct は[こちら](./CODE_OF_CONDUCT.md)を御覧ください。
+ほかになにか不明点があれば、[@nojiri1098](https://www.facebook.com/profile.php?id=100025042625404) までご連絡ください。
 
+Code of Conduct は[こちら](./CODE_OF_CONDUCT.md)。
 
 ## ライセンス
-本ソフトウェアは、[MITライセンス](./LICENSE.txt)の元提供されています。
 
+本ソフトウェアは、[MITライセンス](./LICENSE.txt)の元提供されています。
 
 ## 開発者向け情報
 
