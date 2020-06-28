@@ -31,12 +31,12 @@ Code of Conduct は[こちら](./CODE_OF_CONDUCT.md)を御覧ください。
 | アプリケーション名 | バージョン | 備考 |
 | ------- | ------- | ------- |
 | [Node.js](https://nodejs.org/ja/) | 10.19.0以上 | 必須 |
-| [Visual Studio Code](https://code.visualstudio.com/) | 指定なし | Visual Studio Codeを利用する場合 |
-| [yarn](https://classic.yarnpkg.com/ja/) | 指定なし | 本プログラムをyarnで実行する場合 |
-| [docker compose](https://docs.docker.com/compose/install/) | 指定なし | 本プログラムをdocker composeで実行する場合 |
-| [Vagrant](https://www.vagrantup.com/) | 指定なし | 本プログラムをVagrantで実行する場合 |
+| [VS Code](https://code.visualstudio.com/) | 指定なし | VS Code を利用する場合 |
+| [yarn](https://classic.yarnpkg.com/ja/) | 指定なし | 本プログラムを yarn で実行する場合 |
+| [docker compose](https://docs.docker.com/compose/install/) | 指定なし | 本プログラムを docker compose で実行する場合 |
+| [Vagrant](https://www.vagrantup.com/) | 指定なし | 本プログラムを Vagrant で実行する場合 |
 
-Visual Studio Codeを利用する場合は、以下の拡張機能をインストールすることをおすすめします。
+VS Code を利用する場合は、以下の拡張機能をインストールすることをおすすめします。
 
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
@@ -72,15 +72,15 @@ $ docker-compose up --build
 $ docker-compose run --rm app yarn install
 ```
 
-**VSCode + Remote Containersで開発する場合**
+**VSCode + Remote Containers で開発する場合**
 
-1. VSCodeの拡張機能「[Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)」を導入します。
+1. VSCode の拡張機能「[Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)」を導入します。
 2. [この画像（外部サイト）](https://code.visualstudio.com/docs/remote/containers#_quick-start-try-a-dev-container)のように左下部の「Open Folder in Container」でこのリポジトリのルートを選択すれば環境構築が始まります。
 
-設定を変更したい場合は、`.devcontainer/devcontainer.json`を修正してください。
-詳細は[devcontainer.jsonのリファレンス](https://code.visualstudio.com/docs/remote/containers#_devcontainerjson-reference)をご覧ください。
+設定を変更したい場合は、`.devcontainer/devcontainer.json` を修正してください。
+詳細は [devcontainer.json のリファレンス](https://code.visualstudio.com/docs/remote/containers#_devcontainerjson-reference)をご覧ください。
 
-Remote Container実行時のみ有効な拡張機能「ESLint」を導入していますが、必要に応じて`devcontainer.json`の`extensions`に追加してください。
+Remote Container 実行時のみ有効な拡張機能「ESLint」を導入していますが、必要に応じて `devcontainer.json`の`extensions` に追加してください。
 詳細な手順は[こちら（外部サイト）](https://code.visualstudio.com/docs/remote/containers#_managing-extensions)をご覧ください。
 
 開発環境を再構築する場合は、左下部の「Rebuild Container」を実行します。
@@ -111,7 +111,7 @@ Remote Container実行時のみ有効な拡張機能「ESLint」を導入して�
 #### Webサイトで利用するブランチ
 
 | 目的 | ブランチ | 確認URL |
-| ---- | -------- | ---- | ---- |
+| ---- | -------- | ---- |
 | 本番サイト | production | https://oita.stopcovid19.jp/ |
 | 開発サイト | dev-pages | https://dev-covid19-oita.netlify.app/ |
 
