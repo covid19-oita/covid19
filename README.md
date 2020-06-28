@@ -80,7 +80,7 @@ $ docker-compose run --rm app yarn install
 設定を変更したい場合は、`.devcontainer/devcontainer.json` を修正してください。
 詳細は [devcontainer.json のリファレンス](https://code.visualstudio.com/docs/remote/containers#_devcontainerjson-reference)をご覧ください。
 
-Remote Container 実行時のみ有効な拡張機能「ESLint」を導入していますが、必要に応じて `devcontainer.json`の`extensions` に追加してください。
+Remote Container 実行時のみ有効な拡張機能「ESLint」を導入していますが、必要に応じて `devcontainer.json` の `extensions` に追加してください。
 詳細な手順は[こちら（外部サイト）](https://code.visualstudio.com/docs/remote/containers#_managing-extensions)をご覧ください。
 
 開発環境を再構築する場合は、左下部の「Rebuild Container」を実行します。
@@ -96,8 +96,8 @@ Remote Container 実行時のみ有効な拡張機能「ESLint」を導入して
 
 | ブランチ | HTML類がbuildされるブランチ | 更新されるWebサイト |
 | ---- | ---- | ---- |
-|`master`|`production`|本番サイト https://oita.stopcovid19.jp/|
-|`development`|`dev-pages`|開発用サイト https://dev-covid19-oita.netlify.app/|
+| master | production |本番サイト https://oita.stopcovid19.jp/ |
+| development | dev-pages | 開発用サイト https://dev-covid19-oita.netlify.app/ |
 
 ### ブランチ運用ルール
 
