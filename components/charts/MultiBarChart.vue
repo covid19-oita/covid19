@@ -214,10 +214,11 @@ const options: ThisTypedComponentOptionsWithRecordProps<
             borderColor: graphSeries[index].strokeColor,
             borderWidth: 1,
             datalabels: {
-              color: index === 0 ? 'white' : 'black',
+              anchor: 'end',
+              align: 'end',
               font: {
                 size: '12',
-                weight: index === 0 ? 'bold' : 'normal'
+                weight: 'bold'
               }
             }
           }
