@@ -61,7 +61,14 @@ export default Vue.extend({
         icon: 'mdi-chart-timeline-variant',
         title: this.$t('県内の最新感染動向')
       },
-      newsItems: this.$store.state.news.newsItems.slice().reverse()
+      newsItems: [...this.$store.state.news.newsItems].sort(function(
+        a: any,
+        b: any
+      ) {
+        if (a.date > b.date) return -1
+        if (a.date < b.date) return 1
+        return 0
+      })
     }
     return data
   },
