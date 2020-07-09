@@ -131,6 +131,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import { convertDatetimeToISO8601Format } from '@/utils/formatDate'
+import { EventBus, TOGGLE_EVENT } from '@/utils/card-event-bus'
 
 export default Vue.extend({
   props: {
@@ -189,6 +190,9 @@ export default Vue.extend({
     this.showDetails = true
   },
   methods: {
+    toggleDetails() {
+      EventBus.$emit(TOGGLE_EVENT, { dataView: this.$parent })
+    },
     toggleShareMenu(e: Event) {
       e.stopPropagation()
       this.displayShare = !this.displayShare
