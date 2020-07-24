@@ -18,7 +18,7 @@ Issues へのコメントはご自由にどうぞ！新しい質問や提案な�
 Pull Request を送る場合は、対応する issue 番号を概要欄に必ず記載してください。
 issue に結びついていない Pull Request は受け付けません。
 
-ほかになにか不明点があれば、[@nojiri1098](https://www.facebook.com/profile.php?id=100025042625404) までご連絡ください。
+ほかになにか不明点があれば、[お問い合わせ](https://oita.stopcovid19.jp/contacts/) からご連絡ください。
 
 Code of Conduct は[こちら](./CODE_OF_CONDUCT.md)。
 
