@@ -429,7 +429,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
     },
     graphWidth() {
       const window = this.chartWidth ? this.chartWidth : 0
-      const calc = this.displayData.labels!.length * 50
+      const calc = this.displayData.labels!.length * 70
       return Math.max(window, calc)
     }
   },
@@ -458,7 +458,9 @@ const options: ThisTypedComponentOptionsWithRecordProps<
     const canvas = barElement.querySelector('canvas')
     const labelledbyId = `${this.titleId}-graph`
     // スクロールする幅が大きい分には問題ないので大きめにした 本来は適切な値を計算すべき
-    canvas!.parentElement!.parentElement!.parentElement!.scrollLeft! = 2000
+    canvas!.parentElement!.parentElement!.parentElement!.scrollLeft! = Number(
+      process.env.scroll
+    )
 
     if (canvas) {
       canvas.setAttribute('role', 'img')

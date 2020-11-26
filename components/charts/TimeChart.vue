@@ -584,7 +584,9 @@ const options: ThisTypedComponentOptionsWithRecordProps<
     const barElement = barChart.$el
     const canvas = barElement.querySelector('canvas')
     // スクロールする幅が大きい分には問題ないので大きめにした 本来は適切な値を計算すべき
-    canvas!.parentElement!.parentElement!.parentElement!.scrollLeft! = 2000
+    canvas!.parentElement!.parentElement!.parentElement!.scrollLeft! = Number(
+      process.env.scroll
+    )
   }
 }
 
