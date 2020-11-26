@@ -429,7 +429,7 @@ const options: ThisTypedComponentOptionsWithRecordProps<
     },
     graphWidth() {
       const window = this.chartWidth ? this.chartWidth : 0
-      const calc = this.displayData.labels!.length * 50
+      const calc = this.displayData.labels!.length * 70
       return Math.max(window, calc)
     }
   },
