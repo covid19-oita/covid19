@@ -9,7 +9,8 @@ const config: Configuration = {
   env: {
     apiUrl: 'https://data-covid19-oita.netlify.app/data.json',
     supportUrl: 'https://data-covid19-oita.netlify.app/financial.json',
-    newsUrl: 'https://data-covid19-oita.netlify.app/news.json'
+    newsUrl: 'https://data-covid19-oita.netlify.app/news.json',
+    scroll: '100000'
   },
   /*
    ** Headers of the page
