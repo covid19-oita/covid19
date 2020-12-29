@@ -46,7 +46,7 @@ export default {
       const lasts = this.pickLastNumber(this.chartData)
       const unit = this.$t('億円')
       this.info = {
-        lText: (lasts[0] + lasts[1]).toString(),
+        lText: (lasts[0] + lasts[1]).toLocaleString(),
         mText: this.$t('累計値'),
         sText: `${this.$t('うち')} ①${lasts[0]}${unit} ②${lasts[1]}${unit}`,
         unit
