@@ -15,6 +15,7 @@
 import dayjs from 'dayjs'
 import DataTable from '@/components/DataTable.vue'
 import formatGraph from '@/utils/formatGraph'
+import { convertDateToSimpleFormat } from '@/utils/formatDate'
 
 export default {
   components: {
@@ -70,7 +71,7 @@ export default {
         patientsGraph.length - 1
       ].cumulative.toLocaleString(),
       sText: this.$t('{date}の累計', {
-        date: dayjs(this.$store.state.data.patients.date).format('M/DD')
+        date: convertDateToSimpleFormat(this.$store.state.data.patients.date)
       }),
       unit: this.$t('人')
     }
