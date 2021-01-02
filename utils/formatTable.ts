@@ -1,4 +1,5 @@
 import dayjs from 'dayjs'
+import { convertDateToSimpleFormat } from '@/utils/formatDate'
 
 const headers = [
   { text: '公表日', value: '公表日' },
@@ -42,7 +43,7 @@ export default (data: DataType[]) => {
   }
   data.forEach(d => {
     const TableRow: TableDataType = {
-      公表日: dayjs(d['リリース日']).format('MM/DD') ?? '不明',
+      公表日: convertDateToSimpleFormat(d['リリース日']),
       居住地: d['居住地'] ?? '不明',
       年代: d['年代'] ?? '不明',
       性別: d['性別'] ?? '不明',

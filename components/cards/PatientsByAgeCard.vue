@@ -6,8 +6,7 @@
       :title-id="'patients-by-age'"
       :chart-data="ageGraph"
       :date="date"
-      :unit="$t('人')"
-      :info="$t('累計値')"
+      :info="info"
       :url="'https://data.bodik.jp/dataset/_covid19'"
     />
   </v-col>
@@ -16,6 +15,7 @@
 <script>
 import formatVariableGraph from '@/utils/formatVariableGraph.ts'
 import HorizontalBarChart from '@/components/charts/HorizontalBarChart.vue'
+import { convertDateToSimpleFormat } from '~/utils/formatDate'
 
 export default {
   components: {
@@ -24,6 +24,7 @@ export default {
   data() {
     return {
       date: String,
+      info: {},
       ageGraph: []
     }
   },
@@ -35,6 +36,15 @@ export default {
       const json = this.$store.state.data
       this.ageGraph = formatVariableGraph(json.age.data)
       this.date = json.age.date
+      this.info = {
+        lText: this.ageGraph[
+          this.ageGraph.length - 1
+        ].cumulative.toLocaleString(),
+        sText: this.$t('{date}の累計', {
+          date: convertDateToSimpleFormat(this.date)
+        }),
+        unit: this.$t('人')
+      }
     }
   }
 }
