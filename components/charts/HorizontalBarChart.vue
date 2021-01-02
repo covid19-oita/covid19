@@ -13,9 +13,9 @@
     />
     <template v-slot:infoPanel>
       <data-view-basic-info-panel
-        :l-text="displayInfo.lText"
-        :m-text="displayInfo.sText"
-        :unit="displayInfo.unit"
+        :l-text="info.lText"
+        :m-text="info.sText"
+        :unit="info.unit"
       />
     </template>
     <template v-slot:footer>
@@ -62,15 +62,10 @@ export default {
       required: true,
       default: ''
     },
-    unit: {
-      type: String,
-      required: false,
-      default: ''
-    },
     info: {
-      type: String,
+      type: Object,
       required: false,
-      default: ''
+      default: () => {}
     },
     url: {
       type: String,
@@ -79,24 +74,6 @@ export default {
     }
   },
   computed: {
-    displayInfo() {
-      if (this.isNotLoaded()) {
-        return {
-          lText: '',
-          sText: '',
-          unit: ''
-        }
-      }
-
-      // TODO: Display total patients.
-      const chartData = this.chartData[this.chartData.length - 1]
-      const total = chartData.cumulative.toLocaleString()
-      return {
-        lText: total,
-        sText: this.info,
-        unit: this.unit
-      }
-    },
     displayData() {
       if (this.isNotLoaded()) {
         return {

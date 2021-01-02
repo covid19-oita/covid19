@@ -18,7 +18,7 @@
             class="WhatsNew-list-item-anchor-time px-2"
             :datetime="formattedDate(item.date)"
           >
-            {{ item.date }}
+            {{ formattedDate(item.date) }}
           </time>
           <span class="WhatsNew-list-item-anchor-link">
             {{ item.text }}
@@ -38,7 +38,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { convertDateToISO8601Format } from '@/utils/formatDate'
+import { convertDateToSimpleFormat } from '@/utils/formatDate'
 
 export default Vue.extend({
   props: {
@@ -52,7 +52,7 @@ export default Vue.extend({
       return !/^https?:\/\//.test(path)
     },
     formattedDate(dateString: string) {
-      return convertDateToISO8601Format(dateString)
+      return convertDateToSimpleFormat(dateString)
     }
   }
 })
