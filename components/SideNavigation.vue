@@ -194,7 +194,7 @@ export default Vue.extend({
 }
 
 .SideNavigation-Header {
-  padding: 40px 20px 25px;
+  padding: 40px 16px 8px 16px;
   @include lessThan($small) {
     display: flex;
     padding: 14px 0 13px 20px;
@@ -270,7 +270,7 @@ export default Vue.extend({
 }
 
 .SideNavigation-Body {
-  padding: 0 20px 20px;
+  padding: 16px;
   @include lessThan($small) {
     display: none;
     &.-opened {
