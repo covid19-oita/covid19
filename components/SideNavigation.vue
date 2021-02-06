@@ -139,6 +139,10 @@ export default Vue.extend({
           link: 'https://www.city.oita.oita.jp/o029/coronavirus.html'
         },
         {
+          title: this.$t('TOS 新型コロナウイルス情報'),
+          link: 'https://www.tostv.jp/emergency/'
+        },
+        {
           title: this.$t('大分合同新聞'),
           link: 'https://www.oita-press.co.jp/followup/Covid19'
         },
