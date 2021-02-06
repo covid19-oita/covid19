@@ -135,7 +135,7 @@ export default Vue.extend({
           link: 'http://www.pref.oita.jp/site/covid19-oita/'
         },
         {
-          title: this.$t('大分市 新型コロナウイルスに関連する情報'),
+          title: this.$t('大分市 新型コロナウイルス感染症特設ページ'),
           link: 'https://www.city.oita.oita.jp/o029/coronavirus.html'
         },
         {
