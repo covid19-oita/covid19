@@ -135,8 +135,12 @@ export default Vue.extend({
           link: 'http://www.pref.oita.jp/site/covid19-oita/'
         },
         {
-          title: this.$t('大分市 新型コロナウイルスに関連する情報'),
+          title: this.$t('大分市 新型コロナウイルス感染症特設ページ'),
           link: 'https://www.city.oita.oita.jp/o029/coronavirus.html'
+        },
+        {
+          title: this.$t('TOS 新型コロナウイルス情報'),
+          link: 'https://www.tostv.jp/emergency/'
         },
         {
           title: this.$t('大分合同新聞'),
@@ -190,7 +194,7 @@ export default Vue.extend({
 }
 
 .SideNavigation-Header {
-  padding: 40px 20px 25px;
+  padding: 40px 16px 8px 16px;
   @include lessThan($small) {
     display: flex;
     padding: 14px 0 13px 20px;
@@ -266,7 +270,7 @@ export default Vue.extend({
 }
 
 .SideNavigation-Body {
-  padding: 0 20px 20px;
+  padding: 16px;
   @include lessThan($small) {
     display: none;
     &.-opened {
