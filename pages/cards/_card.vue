@@ -18,9 +18,9 @@
     <patients-by-age-card
       v-else-if="this.$route.params.card == 'patients-by-age'"
     />
-    <sickbeds-used-rate-card
+    <!-- <sickbeds-used-rate-card
       v-else-if="this.$route.params.card == 'patietns-and-sickedbeds'"
-    />
+    /> -->
     <consultations-transition-card
       v-else-if="
         this.$route.params.card ==
@@ -49,7 +49,7 @@ import PatientsDetailCard from '@/components/cards/PatientsDetailCard.vue'
 import PatientsByResidence from '@/components/cards/PatientsByResidence.vue'
 import InspectionsTransitionCard from '@/components/cards/InspectionsTransitionCard.vue'
 import PatientsByAgeCard from '@/components/cards/PatientsByAgeCard.vue'
-import SickbedsUsedRateCard from '@/components/cards/SickbedsUsedRateCard.vue'
+// import SickbedsUsedRateCard from '@/components/cards/SickbedsUsedRateCard.vue'
 import ConsultationsTransitionCard from '@/components/cards/ConsultationsTransitionCard.vue'
 import UsageStatsByIndustryCard from '@/components/cards/support/UsageStatsByIndustryCard.vue'
 import UsageStatsTransitionCard from '@/components/cards/support/UsageStatsTransitionCard.vue'
@@ -64,7 +64,7 @@ export default {
     PatientsByResidence,
     InspectionsTransitionCard,
     PatientsByAgeCard,
-    SickbedsUsedRateCard,
+    // SickbedsUsedRateCard,
     ConsultationsTransitionCard,
     UsageStatsByIndustryCard,
     UsageStatsTransitionCard,

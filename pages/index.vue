@@ -10,7 +10,7 @@
       <patients-by-residence />
       <inspections-transition-card />
       <patients-by-age-card />
-      <sickbeds-used-rate-card />
+      <!-- <sickbeds-used-rate-card /> -->
       <consultations-transition-card />
     </card-row>
   </div>
@@ -29,7 +29,7 @@ import PatientsDetailCard from '@/components/cards/PatientsDetailCard.vue'
 import PatientsByResidence from '@/components/cards/PatientsByResidence.vue'
 import InspectionsTransitionCard from '@/components/cards/InspectionsTransitionCard.vue'
 import PatientsByAgeCard from '@/components/cards/PatientsByAgeCard.vue'
-import SickbedsUsedRateCard from '@/components/cards/SickbedsUsedRateCard.vue'
+// import SickbedsUsedRateCard from '@/components/cards/SickbedsUsedRateCard.vue'
 import ConsultationsTransitionCard from '@/components/cards/ConsultationsTransitionCard.vue'
 
 export default Vue.extend({
@@ -44,7 +44,7 @@ export default Vue.extend({
     PatientsByResidence,
     InspectionsTransitionCard,
     PatientsByAgeCard,
-    SickbedsUsedRateCard,
+    // SickbedsUsedRateCard,
     ConsultationsTransitionCard
   },
   async fetch({ store, app }) {

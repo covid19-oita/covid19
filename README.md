@@ -139,7 +139,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/nojiri1098"><img src="https://github.com/nojiri1098.png" width="100px;" alt=""/><br /><sub><b>Daiki Nojiri</b></sub></a><br /><a href="https://github.com/covid19-oita/covid19/commits?author=nojiri1098" title="Code">💻</a></td>
-    <td align="center"><a href="https://twitter.com/varu_3"><img src="https://github.com/varusan.png" width="100px;" alt=""/><br /><sub><b>Subaru Nakamura</b></sub></a><br /><a href="https://github.com/covid19-oita/covid19/commits?author=varusan" title="Code">💻</a></td>
+    <td align="center"><a href="https://twitter.com/varu_3"><img src="https://github.com/varu3.png" width="100px;" alt=""/><br /><sub><b>Subaru Nakamura</b></sub></a><br /><a href="https://github.com/covid19-oita/covid19/commits?author=varu3" title="Code">💻</a></td>
     <td align="center"><a href="https://shmokmt.github.io/"><img src="https://github.com/shmokmt.png" width="100px;" alt=""/><br /><sub><b>Shoma Okamoto</b></sub></a><br /><a href="https://github.com/covid19-oita/covid19/commits?author=shmokmt" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/satetsu"><img src="https://github.com/satetsu.png" width="100px;" alt=""/><br /><sub><b>satetsu</b></sub></a><br /><a href="#business-satetsu" title="Business development">💼</a></td>
     <td align="center"><a href="https://nakaokarei.github.io/my_portfolio"><img src="https://github.com/NakaokaRei.png" width="100px;" alt=""/><br /><sub><b>Nakaoka Rei</b></sub></a><br /><a href="#translation-NakaokaRei" title="Translation">🌍</a></td>
